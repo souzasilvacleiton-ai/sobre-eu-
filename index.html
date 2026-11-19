@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Colorido - Cleito Eduardo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #0f172a 100%);
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .cartao {
+            background-color: #1e293b;
+            border-radius: 20px;
+            overflow: hidden;
+            max-width: 550px;
+            width: 100%;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .capa-colorida {
+            background: linear-gradient(90deg, #06b6d4, #3b82f6, #8b5cf6);
+            padding: 35px 25px;
+            text-align: center;
+        }
+        .avatar {
+            width: 85px;
+            height: 85px;
+            background-color: #0f172a;
+            color: #38bdf8;
+            font-size: 32px;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 15px auto;
+            border: 4px solid #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .capa-colorida h1 {
+            font-size: 24px;
+            color: #ffffff;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
+        .badge {
+            display: inline-block;
+            background-color: rgba(15, 23, 42, 0.6);
+            color: #e0f2fe;
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-top: 8px;
+        }
+        .conteudo {
+            padding: 25px 30px;
+        }
+        .grade-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+        .caixa-detalhe {
+            background-color: #0f172a;
+            padding: 15px;
+            border-radius: 12px;
+            border-left: 4px solid #06b6d4;
+        }
+        .caixa-detalhe.roxo {
+            border-left-color: #8b5cf6;
+        }
+        .caixa-detalhe.verde {
+            border-left-color: #10b981;
+        }
+        .caixa-detalhe span {
+            display: block;
+            font-size: 12px;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .caixa-detalhe strong {
+            font-size: 15px;
+            color: #f1f5f9;
+        }
+        .sobre-mim {
+            background: linear-gradient(145deg, #0f172a, #1e293b);
+            padding: 18px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            line-height: 1.6;
+        }
+        .sobre-mim h2 {
+            color: #38bdf8;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        .sobre-mim p {
+            color: #cbd5e1;
+            font-size: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #0f172a;
+            color: #64748b;
+            font-size: 13px;
+            border-top: 1px solid #334155;
+        }
+        footer span {
+            color: #38bdf8;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="cartao">
+        <header class="capa-colorida">
+            <div class="avatar">CE</div>
+            <h1>Cleito Eduardo de Souza da Silva</h1>
+            <div class="badge">Página Pessoal &bull; 16 Anos</div>
+        </header>
+
+        <div class="conteudo">
+            <section class="grade-info">
+                <div class="caixa-detalhe">
+                    <span>Idade</span>
+                    <strong>16 anos</strong>
+                </div>
+                <div class="caixa-detalhe roxo">
+                    <span>Cidade</span>
+                    <strong>Rosário do Ivaí</strong>
+                </div>
+                <div class="caixa-detalhe verde">
+                    <span>Estado</span>
+                    <strong>Paraná (PR)</strong>
+                </div>
+            </section>
+
+            <section class="sobre-mim">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Meu nome é <strong>Cleito Eduardo</strong>, tenho 16 anos e moro em Rosário do Ivaí, no Paraná. Estou criando e estilizando minha página web com HTML e CSS.</p>
+            </section>
+        </div>
+
+        <footer>
+            Desenvolvido por <span>Cleito Eduardo</span> &copy; 2026
+        </footer>
+    </main>
+
+</body>
+</html>
